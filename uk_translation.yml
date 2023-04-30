@@ -1,0 +1,3 @@
+files:
+  - source: /webevery_site/blob/main/README.md
+    translation: webevery_site/%two_letters_code%/%original_file_name%
