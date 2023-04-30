@@ -1,8 +1,8 @@
 {
-  "name": "webevery_site",
+  "name": "webevery_SV",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Webevery.github.io/webevery_site/",
+  "homepage": "https://SpaceVit.github.io/webevery_SV/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
