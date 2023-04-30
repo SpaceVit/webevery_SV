@@ -7,7 +7,7 @@ import App from './App';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/webevery_site">
+    <BrowserRouter basename="/webevery_SV">
       <App />
     </BrowserRouter>
   </React.StrictMode>
