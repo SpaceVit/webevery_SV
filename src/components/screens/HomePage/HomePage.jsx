@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import React from 'react';
-import FirstHeader from 'components/layout/Header/FirstHeader';
+import FirstHeader from 'components/layout/FirstHeader/FirstHeader';
 import SecondHeader from 'components/layout/SecondHeader/SecondHeader';
+import ThirdHeader from 'components/layout/ThirdHeader/ThirdHeader';
 
 const HomePage = () => {
   const [firstStyle, setFirstStyle] = useState(true);
@@ -31,7 +32,7 @@ const HomePage = () => {
       <div>
         {firstStyle && <FirstHeader />}
         {secondStyle && <SecondHeader />}
-        {thirdStyle && <p> Third Header </p>}
+        {thirdStyle && <ThirdHeader />}
       </div>
       {firstStyle && (
         <div>
