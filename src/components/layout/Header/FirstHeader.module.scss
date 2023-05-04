@@ -1,0 +1,17 @@
+
+
+.titleNav {
+  font-size: 24px;
+  font-weight: 700;
+  background-color: var(--main_bg_color);
+  padding: 8px;
+  border-radius: 8px;
+  transition-duration: 500ms;
+
+  -webkit-text-stroke: 1px var(--light_color);
+  color: transparent;
+
+  &:hover {
+    color: var(--light_color);
+  }
+}
