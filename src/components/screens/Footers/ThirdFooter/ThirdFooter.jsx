@@ -1,10 +1,12 @@
 import React from 'react';
 
+import ThirdNavBar from 'components/share/NavBars/ThirdNavBar/ThirdNavBar';
+
 const ThirdFooter = () => {
   return (
     <>
       <div>
-        <p>ThirdFooter</p>
+        <ThirdNavBar />
       </div>
     </>
   );
