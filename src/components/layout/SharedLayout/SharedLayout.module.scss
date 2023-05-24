@@ -1,0 +1,52 @@
+.btnBox {
+    display: flex;
+    background: transparent;
+    justify-content: space-around;
+    position: absolute;
+    top: 400px;
+    width: 100%;
+    z-index: 100;
+}
+
+.firstBtn {
+    background-color: transparent;
+    width: 120px;
+    height: 24px;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient(to left,rgb(37, 1, 1), rgb(149, 4, 6));
+    color:rgb(149, 4, 6);
+
+    &:hover {
+    box-shadow: -1px 1px 13px 5px rgb(149, 4, 6);
+  }
+}
+
+.secondBtn {
+    background-color: transparent;
+    width: 120px;
+    height: 24px;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient(to left,rgb(170, 124, 6), rgb(98, 98, 98) );
+    color:rgb(170, 124, 6);
+
+       &:hover {
+    box-shadow: -1px 1px 13px 5px rgb(170, 124, 6);
+  }
+}
+
+.thirdBtn {
+    background-color: transparent;
+    width: 120px;
+    height: 24px;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient(to left, rgb(39, 112, 112), rgb(21, 60, 56));
+    color:rgb(39, 112, 112);
+
+          &:hover {
+    box-shadow: -1px 1px 13px 5px rgb(39, 112, 112);
+  }
+}
+

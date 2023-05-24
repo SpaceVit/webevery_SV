@@ -2,15 +2,19 @@
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  background-image: linear-gradient(to top, rgb(3, 49, 7), rgb(27, 206, 42), rgb(13, 49, 7));
-  box-shadow: rgba(0, 0, 0, 0.75) 10px 10px 26px 0px;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .titleNav {
-  font-size: 24px;
+  font-size: 42px;
   font-weight: 700;
   padding: 8px;
   transition-duration: 500ms;
+  color: white;
 
   -webkit-text-stroke: 1px var(--light_color);
   color: transparent;
@@ -18,17 +22,4 @@
   &:hover {
     color: var(--light_color);
   }
-}
-
-.contactsBox {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.socialsBox {
-  display: flex;
-  flex-direction: row;
-  
-  justify-content: space-between;
 }

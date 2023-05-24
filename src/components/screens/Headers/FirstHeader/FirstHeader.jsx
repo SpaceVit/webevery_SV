@@ -1,15 +1,14 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import styles from './FirstHeader.module.scss';
+
+import FirstLogo from 'components/share/Logoes/FirstLogo/FirstLogo';
 
 const FirstHeader = () => {
   return (
     <>
-      <NavLink to={`/`}>
-        <h1 className={styles.titleNav}>Webevery</h1>
-      </NavLink>
-
-      <div></div>
+      <div className={styles.titleNav}>
+        <FirstLogo />
+      </div>
     </>
   );
 };

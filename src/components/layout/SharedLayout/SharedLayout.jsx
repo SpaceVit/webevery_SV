@@ -6,7 +6,7 @@ import Hero from '../Hero/Hero';
 import Main from '../Main/Main';
 import SideBar from '../Sidebar/Sidebar';
 
-// import styles from './SharedLayout.module.scss';
+import styles from './SharedLayout.module.scss';
 
 const SharedLayout = () => {
   const [firstStyle, setFirstStyle] = useState(true);
@@ -35,23 +35,35 @@ const SharedLayout = () => {
     <>
       <Header first={firstStyle} second={secondStyle} third={thirdStyle} />
       <Suspense fallback={<div>Loading...</div>}>
-        <div>
-          <button type="button" onClick={changeFirstStyle}>
-            1-st
+        <div className={styles.btnBox}>
+          <button
+            className={styles.firstBtn}
+            type="button"
+            onClick={changeFirstStyle}
+          >
+            change your mind
           </button>
-          <button type="button" onClick={changeSecondStyle}>
-            2-nd
+          <button
+            className={styles.secondBtn}
+            type="button"
+            onClick={changeSecondStyle}
+          >
+            change your mind
           </button>
-          <button type="button" onClick={changeThirdStyle}>
-            3-rd
+          <button
+            className={styles.thirdBtn}
+            type="button"
+            onClick={changeThirdStyle}
+          >
+            change your mind
           </button>
         </div>
-        <Hero />
-        <Main />
-        <SideBar />
+        <Hero first={firstStyle} second={secondStyle} third={thirdStyle} />
+        <Main first={firstStyle} second={secondStyle} third={thirdStyle} />
+        <SideBar first={firstStyle} second={secondStyle} third={thirdStyle} />
         <Outlet />
       </Suspense>
-      <Footer />
+      <Footer first={firstStyle} second={secondStyle} third={thirdStyle} />
     </>
   );
 };

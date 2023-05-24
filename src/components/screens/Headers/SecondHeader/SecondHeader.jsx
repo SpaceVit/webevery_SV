@@ -1,9 +1,8 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import favicon from './favicon.ico';
 import { AiFillInstagram } from 'react-icons/ai';
 import { AiFillFacebook } from 'react-icons/ai';
 import { BsTelegram } from 'react-icons/bs';
+import SecondLogo from 'components/share/Logoes/SecondLogo/SecondLogo';
 
 import styles from './SecondHeader.module.scss';
 
@@ -11,9 +10,7 @@ const SecondHeader = () => {
   return (
     <>
       <div className={styles.headerBox}>
-        <NavLink to={`/`}>
-          <img src={favicon} alt="Работа" width={70} height={70} />
-        </NavLink>
+        <SecondLogo />
         <h1 className={styles.titleNav}>Webevery</h1>
         <div className={styles.contactsBox}>
           <a href="mailto:webforevery@gmail.com">webforevery@gmail.com</a>
