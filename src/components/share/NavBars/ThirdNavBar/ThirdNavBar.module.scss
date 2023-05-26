@@ -1,0 +1,37 @@
+.navBarBox {
+    display: flex;
+    flex-direction: column;
+    // justify-content:space-between;
+    padding: 16px;
+    background: transparent;
+    position: fixed;
+    bottom: 1px;
+    width: 100%;
+    z-index: 100;
+    color:white;
+}
+
+.navBarTitle {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background: transparent;
+    width: 100%;
+    color:white;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+}
+.origin{
+    text-align: center;
+}
