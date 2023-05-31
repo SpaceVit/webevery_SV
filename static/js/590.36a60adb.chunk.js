@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwebevery_site=self.webpackChunkwebevery_site||[]).push([[590],{590:function(e,n,t){t.r(n),t.d(n,{default:function(){return i}});t(791);var r="WebDeveloping_webDevelopingContent__2lWZK",s=t(184),i=function(){return(0,s.jsx)(s.Fragment,{children:(0,s.jsx)("p",{className:r,children:"The best Web-developing"})})}}}]);
+//# sourceMappingURL=590.36a60adb.chunk.js.map

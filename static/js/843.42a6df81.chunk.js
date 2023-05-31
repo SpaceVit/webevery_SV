@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwebevery_site=self.webpackChunkwebevery_site||[]).push([[843],{843:function(e,n,t){t.r(n),t.d(n,{default:function(){return r}});t(791);var s="Consultation_consultationContent__U1x9e",u=t(184),r=function(){return(0,u.jsx)(u.Fragment,{children:(0,u.jsx)("p",{className:s,children:"The best consultation"})})}}}]);
+//# sourceMappingURL=843.42a6df81.chunk.js.map
