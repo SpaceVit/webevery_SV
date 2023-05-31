@@ -2,11 +2,11 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import LogoSV from '../../../../images/logoes/LogoSV.png';
 
-const ThirdLogo = () => {
+const ThirdLogo = ({ size }) => {
   return (
-    <div>
+    <div className={size}>
       <NavLink to={`/`}>
-        <img src={LogoSV} alt="logo" width={160} height={160} />
+        <img src={LogoSV} alt="logo" />
       </NavLink>
     </div>
   );

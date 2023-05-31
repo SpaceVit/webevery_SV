@@ -23,3 +23,30 @@
     color: var(--light_color);
   }
 }
+
+
+.logoSize {
+    width: 160px;
+}
+
+
+.contactsBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contactsText {
+ color: white;
+ text-align: center;
+}
+
+.socialsBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.socialsIcon {
+  color: white;
+}

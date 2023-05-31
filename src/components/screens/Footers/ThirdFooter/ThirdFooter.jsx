@@ -1,12 +1,46 @@
 import React from 'react';
 
 import ThirdNavBar from 'components/share/NavBars/ThirdNavBar/ThirdNavBar';
+import ThirdLogo from 'components/share/Logoes/ThirdLogo/ThirdLogo';
+import ThirdContacts from 'components/share/Contacts/ThirdContacts/ThirdContacts';
+
+import styles from './ThirdFooter.module.scss';
 
 const ThirdFooter = () => {
   return (
     <>
-      <div>
-        <ThirdNavBar />
+      <div className={styles.footerContainer}>
+        <div className={styles.footerNavBar}>
+          <ThirdNavBar />
+        </div>
+        <div className={styles.footerContent}>
+          <div className={(styles.footerContacts, styles.footerContentBox)}>
+            <ThirdLogo size={styles.logoSize} />
+            <ThirdContacts
+              contactsBox={styles.contactsBox}
+              contactsText={styles.contactsText}
+              socialsBox={styles.socialsBox}
+              socialsIcon={styles.socialsIcon}
+            />
+          </div>
+          <div className={(styles.footerServices, styles.footerContentBox)}>
+            <p>consultations</p>
+            <p>web-developing</p>
+            <p>supporting</p>
+          </div>
+          <div className={(styles.footerAchievements, styles.footerContentBox)}>
+            3
+          </div>
+          <div className={(styles.footerAboutUs, styles.footerContentBox)}>
+            4
+          </div>
+          <div className={(styles.footerFeedback, styles.footerContentBox)}>
+            5
+          </div>
+        </div>
+        <div>
+          <p className={styles.origin}>Ukrainian product * 2023</p>
+        </div>
       </div>
     </>
   );

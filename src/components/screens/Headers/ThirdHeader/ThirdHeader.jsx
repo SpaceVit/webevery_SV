@@ -9,9 +9,14 @@ const ThirdHeader = () => {
   return (
     <>
       <div className={styles.headerBox}>
-        <ThirdLogo />
+        <ThirdLogo size={styles.logoSize} />
         <h1 className={styles.titleNav}>W e b e v e r y</h1>
-        <ThirdContacts />
+        <ThirdContacts
+          contactsBox={styles.contactsBox}
+          contactsText={styles.contactsText}
+          socialsBox={styles.socialsBox}
+          socialsIcon={styles.socialsIcon}
+        />
       </div>
     </>
   );

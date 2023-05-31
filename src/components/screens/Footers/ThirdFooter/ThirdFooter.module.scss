@@ -1,0 +1,53 @@
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    background: transparent;
+    position: fixed;
+    bottom: 1px;
+    width: 100%;
+    z-index: 100;
+    color:white;
+}
+
+.footerContent{
+    display: flex;
+    flex-direction: row;
+    padding-top: 8px;
+}
+
+.footerContentBox {
+    width: 20%;
+    padding-right: 8px;
+}
+
+.origin{
+    text-align: center;
+}
+
+
+.logoSize {
+    width: 104px;
+}
+
+.contactsBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 4px;
+}
+
+.contactsText {
+ color: white;
+ font-size: 12px;
+ 
+}
+
+.socialsBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.socialsIcon {
+    margin-right: 40px;
+}
