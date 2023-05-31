@@ -7,6 +7,15 @@ const AboutUs = lazy(() => import('./pages/AboutUs'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 const OurSevices = lazy(() => import('./pages/OurServices'));
 const Hero = lazy(() => import('./components/layout/Hero'));
+const Consultation = lazy(() =>
+  import('./components/share/OurServices/Consultation')
+);
+const WebDeveloping = lazy(() =>
+  import('./components/share/OurServices/WebDeveloping')
+);
+const Supporting = lazy(() =>
+  import('./components/share/OurServices/Supporting')
+);
 
 const App = () => {
   const [firstStyle, setFirstStyle] = useState(true);
@@ -83,10 +92,9 @@ const App = () => {
           {/* Outlet start */}
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/ourServices" element={<OurSevices />}>
-            <Route
-              path="consultation"
-              element={<div>Comsultation is good</div>}
-            />
+            <Route path="consultation" element={<Consultation />} />
+            <Route path="webDeveloping" element={<WebDeveloping />} />
+            <Route path="supporting" element={<Supporting />} />
           </Route>
           {/* <Route path="aboutUs/:id" element={<DevPage />} /> */}
           <Route path="*" element={<NotFound />} />

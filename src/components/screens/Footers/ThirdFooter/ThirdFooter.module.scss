@@ -19,6 +19,8 @@
 .footerContentBox {
     width: 20%;
     padding-right: 8px;
+    display: flex;
+    flex-direction: column;
 }
 
 .origin{

@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import ThirdNavBar from 'components/share/NavBars/ThirdNavBar/ThirdNavBar';
 import ThirdLogo from 'components/share/Logoes/ThirdLogo/ThirdLogo';
@@ -23,10 +24,25 @@ const ThirdFooter = () => {
               socialsIcon={styles.socialsIcon}
             />
           </div>
-          <div className={(styles.footerServices, styles.footerContentBox)}>
-            <p>consultations</p>
-            <p>web-developing</p>
-            <p>supporting</p>
+          <div className={styles.footerContentBox}>
+            <NavLink
+              to="ourServices/consultation"
+              className={styles.consultationLink}
+            >
+              Consultation
+            </NavLink>
+            <NavLink
+              to="ourServices/webDeveloping"
+              className={styles.consultationLink}
+            >
+              Web-developing
+            </NavLink>
+            <NavLink
+              to="ourServices/supporting"
+              className={styles.consultationLink}
+            >
+              Supporting
+            </NavLink>
           </div>
           <div className={(styles.footerAchievements, styles.footerContentBox)}>
             3

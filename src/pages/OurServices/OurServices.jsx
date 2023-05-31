@@ -6,7 +6,7 @@ const OurServices = () => {
   return (
     <>
       <section className={styles.page}>
-        <h1 className={styles.content}>Our Services</h1>
+        <h1 className={styles.title}>Our Services</h1>
         <ul className={styles.linksList}>
           <li>
             <NavLink to="consultation" className={styles.consultationLink}>
