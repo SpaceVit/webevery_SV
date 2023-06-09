@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/webevery_SV/static/css/main.3bf22261.css",
-    "main.js": "/webevery_SV/static/js/main.24c036ff.js",
+    "main.js": "/webevery_SV/static/js/main.4bd5ffbf.js",
     "static/css/694.60a6d8b0.chunk.css": "/webevery_SV/static/css/694.60a6d8b0.chunk.css",
     "static/js/694.4776bea3.chunk.js": "/webevery_SV/static/js/694.4776bea3.chunk.js",
     "static/js/181.447cbcea.chunk.js": "/webevery_SV/static/js/181.447cbcea.chunk.js",
@@ -29,7 +29,7 @@
     "static/media/nataliiaBoiko.jpeg": "/webevery_SV/static/media/nataliiaBoiko.90624831334955f84d4f.jpeg",
     "index.html": "/webevery_SV/index.html",
     "main.3bf22261.css.map": "/webevery_SV/static/css/main.3bf22261.css.map",
-    "main.24c036ff.js.map": "/webevery_SV/static/js/main.24c036ff.js.map",
+    "main.4bd5ffbf.js.map": "/webevery_SV/static/js/main.4bd5ffbf.js.map",
     "694.60a6d8b0.chunk.css.map": "/webevery_SV/static/css/694.60a6d8b0.chunk.css.map",
     "694.4776bea3.chunk.js.map": "/webevery_SV/static/js/694.4776bea3.chunk.js.map",
     "181.447cbcea.chunk.js.map": "/webevery_SV/static/js/181.447cbcea.chunk.js.map",
@@ -46,6 +46,6 @@
   },
   "entrypoints": [
     "static/css/main.3bf22261.css",
-    "static/js/main.24c036ff.js"
+    "static/js/main.4bd5ffbf.js"
   ]
 }
