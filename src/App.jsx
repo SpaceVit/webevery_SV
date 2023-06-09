@@ -18,26 +18,47 @@ const Supporting = lazy(() =>
 );
 
 const App = () => {
-  const [firstStyle, setFirstStyle] = useState(true);
-  const [secondStyle, setSecondStyle] = useState(false);
-  const [thirdStyle, setThirdStyle] = useState(false);
+  const [firstStyle, setFirstStyle] = useState(
+    JSON.parse(localStorage.getItem('firstStyle'))
+  );
+  const [secondStyle, setSecondStyle] = useState(
+    JSON.parse(localStorage.getItem('secondStyle'))
+  );
+  const [thirdStyle, setThirdStyle] = useState(
+    JSON.parse(localStorage.getItem('thirdStyle'))
+  );
+
+  if (firstStyle === null) {
+    return setFirstStyle(true);
+  } else if (localStorage.getItem('firsrStyle') === false) {
+    return setFirstStyle(false);
+  }
 
   const changeFirstStyle = () => {
-    setFirstStyle(true);
+    localStorage.setItem('firstStyle', true);
+    localStorage.setItem('secondStyle', false);
+    localStorage.setItem('thirdStyle', false);
     setSecondStyle(false);
+    setFirstStyle(true);
     setThirdStyle(false);
   };
 
   const changeSecondStyle = () => {
-    setFirstStyle(false);
+    localStorage.setItem('firstStyle', false);
+    localStorage.setItem('secondStyle', true);
+    localStorage.setItem('thirdStyle', false);
     setSecondStyle(true);
+    setFirstStyle(false);
     setThirdStyle(false);
   };
 
   const changeThirdStyle = () => {
-    setFirstStyle(false);
-    setSecondStyle(false);
+    localStorage.setItem('firstStyle', false);
+    localStorage.setItem('secondStyle', false);
+    localStorage.setItem('thirdStyle', true);
     setThirdStyle(true);
+    setSecondStyle(false);
+    setFirstStyle(false);
   };
 
   return (
