@@ -1,9 +1,7 @@
 {
   "files": {
     "main.css": "/webevery_SV/static/css/main.3bf22261.css",
-    "main.js": "/webevery_SV/static/js/main.4bd5ffbf.js",
-    "static/css/694.60a6d8b0.chunk.css": "/webevery_SV/static/css/694.60a6d8b0.chunk.css",
-    "static/js/694.4776bea3.chunk.js": "/webevery_SV/static/js/694.4776bea3.chunk.js",
+    "main.js": "/webevery_SV/static/js/main.056e5fa1.js",
     "static/js/181.447cbcea.chunk.js": "/webevery_SV/static/js/181.447cbcea.chunk.js",
     "static/css/876.84445ce2.chunk.css": "/webevery_SV/static/css/876.84445ce2.chunk.css",
     "static/js/876.372b2933.chunk.js": "/webevery_SV/static/js/876.372b2933.chunk.js",
@@ -16,22 +14,11 @@
     "static/css/522.c39dc06c.chunk.css": "/webevery_SV/static/css/522.c39dc06c.chunk.css",
     "static/js/522.d7b1312a.chunk.js": "/webevery_SV/static/js/522.d7b1312a.chunk.js",
     "static/media/wallpaperflare.com_wallpaper.jpg": "/webevery_SV/static/media/wallpaperflare.com_wallpaper.93662d248b99ef0075ff.jpg",
-    "static/media/maksPeltec.png": "/webevery_SV/static/media/maksPeltec.3aef74b08c83f529acc6.png",
-    "static/media/ivikaDuda.jpeg": "/webevery_SV/static/media/ivikaDuda.e7cfec6503f3f95a9c98.jpeg",
     "static/media/wallpaperflare.com_wallpaper3.jpg": "/webevery_SV/static/media/wallpaperflare.com_wallpaper3.79ff26d621fe1d01e456.jpg",
-    "static/media/vitaliiPavlovskyi.jpeg": "/webevery_SV/static/media/vitaliiPavlovskyi.51ef328f7094cf0bb269.jpeg",
-    "static/media/myroslav.jpeg": "/webevery_SV/static/media/myroslav.8e1f65cc8d03f9c85281.jpeg",
-    "static/media/andriiTsapkov.jpeg": "/webevery_SV/static/media/andriiTsapkov.3208600a7c3b418992d0.jpeg",
     "static/media/LogoSV.png": "/webevery_SV/static/media/LogoSV.875841962a204b27d6f5.png",
-    "static/media/dmytroColodchenko.jpeg": "/webevery_SV/static/media/dmytroColodchenko.d871a231cf87cdac1391.jpeg",
-    "static/media/volodymyrKavun.jpeg": "/webevery_SV/static/media/volodymyrKavun.b35560283e0ce584e3f5.jpeg",
-    "static/media/maksSheih.jpeg": "/webevery_SV/static/media/maksSheih.46b4327fa46d23aee5a7.jpeg",
-    "static/media/nataliiaBoiko.jpeg": "/webevery_SV/static/media/nataliiaBoiko.90624831334955f84d4f.jpeg",
     "index.html": "/webevery_SV/index.html",
     "main.3bf22261.css.map": "/webevery_SV/static/css/main.3bf22261.css.map",
-    "main.4bd5ffbf.js.map": "/webevery_SV/static/js/main.4bd5ffbf.js.map",
-    "694.60a6d8b0.chunk.css.map": "/webevery_SV/static/css/694.60a6d8b0.chunk.css.map",
-    "694.4776bea3.chunk.js.map": "/webevery_SV/static/js/694.4776bea3.chunk.js.map",
+    "main.056e5fa1.js.map": "/webevery_SV/static/js/main.056e5fa1.js.map",
     "181.447cbcea.chunk.js.map": "/webevery_SV/static/js/181.447cbcea.chunk.js.map",
     "876.84445ce2.chunk.css.map": "/webevery_SV/static/css/876.84445ce2.chunk.css.map",
     "876.372b2933.chunk.js.map": "/webevery_SV/static/js/876.372b2933.chunk.js.map",
@@ -46,6 +33,6 @@
   },
   "entrypoints": [
     "static/css/main.3bf22261.css",
-    "static/js/main.4bd5ffbf.js"
+    "static/js/main.056e5fa1.js"
   ]
 }
