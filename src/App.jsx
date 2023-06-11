@@ -2,31 +2,20 @@ import React, { lazy, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import styles from './App.module.scss';
 import SharedLayout from 'components/layout/SharedLayout';
+import PrivateRoute from 'PrivateRoute';
 
-const AboutUs = lazy(() => import('./pages/AboutUs'));
+// const AboutUs = lazy(() => import('./pages/AboutUs'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 const OurSevices = lazy(() => import('./pages/OurServices'));
 const Hero = lazy(() => import('./components/layout/Hero'));
-const Consultation = lazy(() =>
-  import('./components/share/OurServices/Consultation')
-);
-const WebDeveloping = lazy(() =>
-  import('./components/share/OurServices/WebDeveloping')
-);
-const Supporting = lazy(() =>
-  import('./components/share/OurServices/Supporting')
-);
+const Consultation = lazy(() => import('./components/share/OurServices/Consultation'));
+const WebDeveloping = lazy(() => import('./components/share/OurServices/WebDeveloping'));
+const Supporting = lazy(() => import('./components/share/OurServices/Supporting'));
 
 const App = () => {
-  const [firstStyle, setFirstStyle] = useState(
-    JSON.parse(localStorage.getItem('firstStyle'))
-  );
-  const [secondStyle, setSecondStyle] = useState(
-    JSON.parse(localStorage.getItem('secondStyle'))
-  );
-  const [thirdStyle, setThirdStyle] = useState(
-    JSON.parse(localStorage.getItem('thirdStyle'))
-  );
+  const [firstStyle, setFirstStyle] = useState(JSON.parse(localStorage.getItem('firstStyle')));
+  const [secondStyle, setSecondStyle] = useState(JSON.parse(localStorage.getItem('secondStyle')));
+  const [thirdStyle, setThirdStyle] = useState(JSON.parse(localStorage.getItem('thirdStyle')));
 
   if (firstStyle === null) {
     return setFirstStyle(true);
@@ -64,45 +53,20 @@ const App = () => {
   return (
     <>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <SharedLayout
-              first={firstStyle}
-              second={secondStyle}
-              third={thirdStyle}
-            />
-          }
-        >
+        <Route path="/" element={<SharedLayout first={firstStyle} second={secondStyle} third={thirdStyle} />}>
           <Route
             index
             element={
               <>
-                <Hero
-                  first={firstStyle}
-                  second={secondStyle}
-                  third={thirdStyle}
-                />
+                <Hero first={firstStyle} second={secondStyle} third={thirdStyle} />
                 <div className={styles.btnBox}>
-                  <button
-                    className={styles.firstBtn}
-                    type="button"
-                    onClick={changeFirstStyle}
-                  >
+                  <button className={styles.firstBtn} type="button" onClick={changeFirstStyle}>
                     change your mind
                   </button>
-                  <button
-                    className={styles.secondBtn}
-                    type="button"
-                    onClick={changeSecondStyle}
-                  >
+                  <button className={styles.secondBtn} type="button" onClick={changeSecondStyle}>
                     change your mind
                   </button>
-                  <button
-                    className={styles.thirdBtn}
-                    type="button"
-                    onClick={changeThirdStyle}
-                  >
+                  <button className={styles.thirdBtn} type="button" onClick={changeThirdStyle}>
                     change your mind
                   </button>
                 </div>
@@ -111,12 +75,20 @@ const App = () => {
           />
 
           {/* Outlet start */}
-          <Route path="/aboutUs" element={<AboutUs />} />
-          <Route path="/ourServices" element={<OurSevices />}>
+          {/* <Route path="/aboutUs" element={<AboutUs />} /> */}
+          <Route
+            path="/ourServices"
+            element={
+              <PrivateRoute redirectPath={'/'}>
+                <OurSevices />
+              </PrivateRoute>
+            }
+          >
             <Route path="consultation" element={<Consultation />} />
             <Route path="webDeveloping" element={<WebDeveloping />} />
             <Route path="supporting" element={<Supporting />} />
           </Route>
+
           {/* <Route path="aboutUs/:id" element={<DevPage />} /> */}
           <Route path="*" element={<NotFound />} />
           {/* Outlet end */}
