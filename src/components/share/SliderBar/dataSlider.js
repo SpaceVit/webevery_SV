@@ -8,7 +8,7 @@ const dataSlider = [
   {
     id: 2,
     linkTo: 'webDeveloping',
-    linkText: 'Web-developing',
+    linkText: 'Web  developing',
   },
 
   {
