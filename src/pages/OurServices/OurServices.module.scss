@@ -12,16 +12,27 @@
     margin-bottom: 16px ;
 }
 
-.linksList{
+.aside {
+    width: 5%;
+    height:calc(100% - 180px);
+    float: left;  
+    padding: 2px;
+}
+
+.servicesLinksList{
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-bottom: 8px;
+
 }
 
 .consultationLink{
   display: flex;
   width: auto;
   color: white;
-}
+ 
+ }
+
+// .servicesListItem {
+//    &:not(:last-child){
+//             margin-bottom: 150px;
+//         }
+// }
