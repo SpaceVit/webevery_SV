@@ -2,7 +2,9 @@
   display: flex;
   // background-color: transparent;
   width: 100vw;
-  margin-top: 200px;
+  margin-top: 500px;
+  overflow: hidden;
+  width: fit-content;
 }
 .emptyCirclesWrapperSecond {
   margin-top: 0px;
@@ -10,7 +12,7 @@
 
 .emptyCircles {
   // color: aliceblue;
-  width: 20%;
+  width: 200px;
   height: 200px;
   mix-blend-mode: multiply;
   background: #234;
@@ -42,4 +44,109 @@
   text-align: center;
   margin: 0;
   mix-blend-mode: luminosity;
+}
+
+// =====div100====
+
+.div100 {
+  display: flex;
+  width: fit-content;
+  overflow-x: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.div101 {
+  position: relative;
+  width: 148px;
+  height: 70px;
+  overflow: hidden;
+}
+
+.div101:before {
+  content: '';
+  position: absolute;
+  left: 50px;
+  top: -15%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  box-shadow: 0px 0px 0px 2000px #d6bf76;
+}
+
+.div101:nth-child(2n + 1)::before {
+  top: 70%;
+}
+
+// ====div 200 ====
+
+.div200 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  overflow-x: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+}
+
+.div300 {
+  display: flex;
+
+  width: fit-content;
+}
+
+.div201 {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.div201:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 0px 0px 2000px rgb(250, 110, 6);
+}
+
+.div201:nth-child(2n + 1)::before {
+  top: 70%;
+}
+
+.helloBtnIndex,
+.helloBtn {
+  background-color: rgb(1, 170, 184);
+  border: none;
+  width: 100px;
+
+  height: 100px;
+  border-radius: 50%;
+  position: fixed;
+  left: 100px;
+  bottom: 100px;
+  transition-duration: 1s;
+}
+.helloBtnIndex {
+  z-index: 5;
+  cursor: pointer;
+  scale: 1.5;
+  filter: brightness(1.2);
+  // background-color: rgb(250, 110, 6);
+  background-color: rgb(255, 110, 6);
+
+  box-shadow: 0 0 12px rgb(250, 250, 250);
+}
+
+.helloBtnNone {
+  display: none;
 }
