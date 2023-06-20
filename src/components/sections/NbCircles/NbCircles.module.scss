@@ -1,0 +1,45 @@
+.emptyCirclesWrapper {
+  display: flex;
+  // background-color: transparent;
+  width: 100vw;
+  margin-top: 200px;
+}
+.emptyCirclesWrapperSecond {
+  margin-top: 0px;
+}
+
+.emptyCircles {
+  // color: aliceblue;
+  width: 20%;
+  height: 200px;
+  mix-blend-mode: multiply;
+  background: #234;
+  position: relative;
+}
+
+.emptyCircles::before {
+  content: '';
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  border: 2px solid rgb(202, 227, 127);
+}
+
+.emptyCircles:nth-child(2n + 1)::before {
+  top: 80px;
+}
+
+.justText {
+  font-size: 13px;
+  font-weight: bold;
+  color: #1ba681;
+  background-color: black;
+  padding: 24px;
+  text-align: center;
+  margin: 0;
+  mix-blend-mode: luminosity;
+}
