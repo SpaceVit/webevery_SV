@@ -1,9 +1,11 @@
 .wrapperHero {
   // height: 500px;
-  background-image: url(../../../../images/bcgrnd/yelw/wallpaperflare.com_wallpaper3.jpg);
+  // background-image: url(../../../../images/bcgrnd/yelw/wallpaperflare.com_wallpaper3.jpg);
+  background-image: url(../../../../images/bcgrnd/yelw/fromTelegram.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
   background-attachment: fixed; //prevents BG moving
   color: #fff; //for  mix-blend-mode: multiply;
+  overflow: hidden;
 }
