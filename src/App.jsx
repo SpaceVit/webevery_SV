@@ -11,6 +11,7 @@ const Hero = lazy(() => import('./components/layout/Hero'));
 const Consultation = lazy(() => import('./components/share/OurServices/Consultation'));
 const WebDeveloping = lazy(() => import('./components/share/OurServices/WebDeveloping'));
 const Supporting = lazy(() => import('./components/share/OurServices/Supporting'));
+const Design = lazy(() => import('./components/share/OurServices/Design'));
 
 const App = () => {
   const [firstStyle, setFirstStyle] = useState(JSON.parse(localStorage.getItem('firstStyle')));
@@ -80,13 +81,15 @@ const App = () => {
             path="/ourServices"
             element={
               <PrivateRoute redirectPath={'/'}>
-                <OurSevices />
+                {' '}
+                <OurSevices />{' '}
               </PrivateRoute>
             }
           >
             <Route path="consultation" element={<Consultation />} />
             <Route path="webDeveloping" element={<WebDeveloping />} />
             <Route path="supporting" element={<Supporting />} />
+            <Route path="design" element={<Design />} />
           </Route>
 
           {/* <Route path="aboutUs/:id" element={<DevPage />} /> */}

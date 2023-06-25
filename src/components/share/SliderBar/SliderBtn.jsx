@@ -1,14 +1,29 @@
+// import React from 'react';
+// import styles from './SliderBar.module.scss';
+
+// import { GoArrowLeft, GoArrowRight } from 'react-icons/go';
+
+// const SliderBtn = ({ moveSlide, direction }) => {
+//   return (
+//     <button onClick={moveSlide} className={styles.sliderBtn}>
+//       {direction === 'left' ? <GoArrowLeft /> : <GoArrowRight />}
+//     </button>
+//   );
+// };
+
+// export default SliderBtn;
+
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import styles from './SliderBar.module.scss';
+import { GoArrowLeft, GoArrowRight } from 'react-icons/go';
 
-import { BsChevronCompactUp, BsChevronCompactDown } from 'react-icons/bs';
-
-const SliderBtn = ({ moveSlide, direction }) => {
-  console.log(moveSlide, direction);
+const SliderBtn = ({ moveSlide, direction, linkTo, active }) => {
+  console.log('btn linkTo', linkTo);
   return (
-    <button onClick={moveSlide} className={direction === 'up' ? styles.sliderBtnUp : styles.sliderBtnDown}>
-      {direction === 'up' ? <BsChevronCompactUp /> : <BsChevronCompactDown />}
-    </button>
+    <NavLink onClick={moveSlide} className={active ? styles.sliderActiveBtn : styles.sliderUnactiveBtn} to={linkTo}>
+      {direction === 'left' ? <GoArrowLeft /> : <GoArrowRight />}
+    </NavLink>
   );
 };
 

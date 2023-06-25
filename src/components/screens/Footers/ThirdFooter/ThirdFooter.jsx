@@ -25,34 +25,22 @@ const ThirdFooter = () => {
             />
           </div>
           <div className={styles.footerContentBox}>
-            <NavLink
-              to="ourServices/consultation"
-              className={styles.consultationLink}
-            >
+            <NavLink to="ourServices/consultation" className={styles.consultationLink}>
               Consultation
             </NavLink>
-            <NavLink
-              to="ourServices/webDeveloping"
-              className={styles.consultationLink}
-            >
+            <NavLink to="ourServices/design" className={styles.consultationLink}>
+              Design
+            </NavLink>
+            <NavLink to="ourServices/webDeveloping" className={styles.consultationLink}>
               Web-developing
             </NavLink>
-            <NavLink
-              to="ourServices/supporting"
-              className={styles.consultationLink}
-            >
+            <NavLink to="ourServices/supporting" className={styles.consultationLink}>
               Supporting
             </NavLink>
           </div>
-          <div className={(styles.footerAchievements, styles.footerContentBox)}>
-            3
-          </div>
-          <div className={(styles.footerAboutUs, styles.footerContentBox)}>
-            4
-          </div>
-          <div className={(styles.footerFeedback, styles.footerContentBox)}>
-            5
-          </div>
+          <div className={(styles.footerAchievements, styles.footerContentBox)}>3</div>
+          <div className={(styles.footerAboutUs, styles.footerContentBox)}>4</div>
+          <div className={(styles.footerFeedback, styles.footerContentBox)}>5</div>
         </div>
         <div>
           <p className={styles.origin}>Ukrainian product * 2023</p>

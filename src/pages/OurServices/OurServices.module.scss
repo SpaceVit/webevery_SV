@@ -13,26 +13,8 @@
 }
 
 .aside {
-    width: 5%;
+    width: 10%;
     height:calc(100% - 180px);
     float: left;  
     padding: 2px;
 }
-
-.servicesLinksList{
-  width: 100%;
-
-}
-
-.consultationLink{
-  display: flex;
-  width: auto;
-  color: white;
- 
- }
-
-// .servicesListItem {
-//    &:not(:last-child){
-//             margin-bottom: 150px;
-//         }
-// }

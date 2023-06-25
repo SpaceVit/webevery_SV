@@ -4,15 +4,19 @@ const dataSlider = [
     linkTo: 'consultation',
     linkText: 'Consultation',
   },
-
   {
     id: 2,
+    linkTo: 'design',
+    linkText: 'Design',
+  },
+  {
+    id: 3,
     linkTo: 'webDeveloping',
     linkText: 'Web  developing',
   },
 
   {
-    id: 3,
+    id: 4,
     linkTo: 'supporting',
     linkText: 'Supporting',
   },
